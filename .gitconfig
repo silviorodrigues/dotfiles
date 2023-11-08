@@ -1,0 +1,33 @@
+[user]
+	name = Silvio Rodrigues
+	email = 
+[color]
+	status = auto
+	branch = auto
+	interactive = auto
+	diff = auto
+[core]
+	quotepath = false
+	editor = code .
+	excludesfile = ~/.gitignore
+[branch]
+	autoSetupRebase = always
+[alias]
+	cm = commit -m
+	co = checkout
+	b = branch
+	st = status
+    r = revert
+    cp = cherry-pick
+	who = shortlog -s --
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	mylog = log --pretty=format:'%h %s [%an]' --graph
+	rmall = "!git rm $(git ls-files --deleted)"
+	lgfull = log --pretty=oneline --decorate
+	continue = rebase --continue
+	abort = rebase --abort
+	deletedfiles = log --diff-filter=D --oneline --decorate --name-only
+	findcommits = log --oneline --decorate --follow
+    updatesubmodule = submodule update
+[push]
+	default = current
