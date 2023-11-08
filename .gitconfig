@@ -17,8 +17,8 @@
 	co = checkout
 	b = branch
 	st = status
-    r = revert
-    cp = cherry-pick
+	r = revert
+	cp = cherry-pick
 	who = shortlog -s --
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	mylog = log --pretty=format:'%h %s [%an]' --graph
@@ -28,6 +28,6 @@
 	abort = rebase --abort
 	deletedfiles = log --diff-filter=D --oneline --decorate --name-only
 	findcommits = log --oneline --decorate --follow
-    updatesubmodule = submodule update
+	updatesubmodule = submodule update
 [push]
 	default = current
